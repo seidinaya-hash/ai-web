@@ -6,10 +6,10 @@ import numpy as np
 from ultralytics import YOLO
 import time
 
-# --- НАСТРОЙКИ СТРАНИЦЫ ---
+
 st.set_page_config(page_title="AI-ColoScan Pro", layout="wide")
 
-# Инициализация хранилища
+
 if 'top_crops' not in st.session_state:
     st.session_state.top_crops = [] # Список: (conf, image, timestamp)
 if 'last_detection_time' not in st.session_state:
